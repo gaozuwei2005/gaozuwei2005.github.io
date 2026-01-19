@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "57b43f1bec4cce85",
+        "id": "73dead7b40321b55",
         "type": "tabs",
         "children": [
           {
-            "id": "16285dd25e5de558",
+            "id": "6cf7ffe5daa3dcf6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/_index.md",
+                "file": "notes/computer-organization/review/1-introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "1-introduction"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Pasted image ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/_index.md",
+                "file": "notes/computer-organization/review/1-introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "_index 的反向链接列表"
+              "title": "1-introduction 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/_index.md",
+                "file": "notes/computer-organization/review/1-introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "_index 的出链列表"
+              "title": "1-introduction 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/_index.md",
+                "file": "notes/computer-organization/review/1-introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_index 的大纲"
+              "title": "1-introduction 的大纲"
             }
           }
         ]
@@ -180,15 +180,46 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "301c2a06d79923ac",
+  "active": "6cf7ffe5daa3dcf6",
   "lastOpenFiles": [
-    "writing/_index.md",
-    "projects/_index.md",
-    "posts/hello.md",
+    "notes/computer-organization/review/2-arithmetic.md",
+    "notes/computer-organization/review/3-memory.md",
+    "notes/computer-organization/review/4-instruction-system.md",
+    "notes/computer-organization/review/5-cpu.md",
+    "notes/computer-organization/_index.md",
     "notes/_index.md",
+    "notes/computer-organization/review/1-introduction.md",
+    "notes/computer-organization/review/attachments/Pasted-image-20260105183102.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260105182442.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260105165416.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260105164620.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260105151340.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260104175628.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260104163411.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260104152548.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260104144716.png",
+    "notes/computer-organization/review/attachments/Pasted-image-20260104130905.png",
+    "attachments/Pasted.md",
+    "attachments",
+    "2025-01-07.md",
+    "notes/4 指令系统.md",
+    "notes/computer-organization/review/attachments",
+    "notes/computer-organization/review",
+    "notes/computer-organization/新建文件夹",
+    "notes/computer-organization/lectures",
+    "notes/computer-organization",
+    "notes/未命名",
+    "notes/3 存储系统.md",
+    "notes/1 计算机系统概述.md",
+    "notes/2 数据的表示和运算.md",
+    "notes/5 中央处理器.md",
+    "projects/_index.md",
+    "writing/_index.md",
+    "posts/hello.md",
     "about/_index.md",
     "2026-01-18.md"
   ]
