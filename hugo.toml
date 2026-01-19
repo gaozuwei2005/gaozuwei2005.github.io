@@ -13,6 +13,7 @@ enableRobotsTXT = true
   ShowToc = true
   TocOpen = true
   ShowCodeCopyButtons = true
+  disableSpecial1stPost = true
 
 [menu]
   [[menu.main]]
@@ -31,3 +32,6 @@ enableRobotsTXT = true
     name = "About"
     url = "/about/"
     weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true

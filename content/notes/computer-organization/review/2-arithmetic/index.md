@@ -1,14 +1,18 @@
 ---
-date: 2026-01-19
+date: 2026-01-02
 title: 计算机组成原理 | 复习 | 2 数据的表示和运算
 toc: true
-description: IEEE 754 单精度浮点数、大小端与对齐问、有符号数、无符号数、四种标志位、浮点数加减法
+summary: IEEE 754 单精度浮点数、大小端与对齐问、有符号数、无符号数、四种标志位、浮点数加减法
 ---
 
 >**重点内容**：
+>
 >IEEE 754 单精度浮点数
+>
 >大小端、对齐问题
+>
 >有符号数、无符号数、四种标志位
+>
 >浮点数加减法
 
 # 2.1 数制与编码
@@ -18,18 +22,20 @@ description: IEEE 754 单精度浮点数、大小端与对齐问、有符号数�
 进制转换略。注意点：十进制的有限小数在二进制中不一定就是有限小数，但是任意二进制有限小数在十进制中都是有限小数。
 
 真值：数学里的实际值
+
 机器数：对真值的编码得到的二进制序列，如原码、反码、补码。
 
 浮点数在计算机的两种数据格式：定点表示、浮点表示。
+
 常用 **定点补码整数** 表示整数，**浮点小数** 表示浮点数。
 
 | 数的类型 | 码的类型        | 定义                                                                                                                        |
 | ---- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 纯小数  | 原码          | $$[x]_原 = \begin{cases} x, & 0 \le x < 1 \\ 1 + \lvert x\rvert,& -1 < x \le 0\end{cases}$$                                |
-| 纯整数  | 原码 ($n$ 位)  | $$[x]_原 = \begin{cases} x, & 0 \le x < 2^{n - 1} \\ 2^{n - 1} + \lvert x \rvert,& -2^{n - 1} < x \le 0\end{cases}$$       |
-| 纯小数  | 补码          | $$[x]_补 = \begin{cases} x, & 0 \le x < 1 \\ 2 - \lvert x\rvert,& -1 \le x < 0\end{cases}$$                                |
-| 纯整数  | 补码 ($n$ 位)  | $$[x]_补 = \begin{cases} x, & 0 \le x < 2^{n - 1} \\ 2^n -  \lvert x \rvert,& -2^{n - 1} \le x < 0\end{cases}$$            |
-| 纯小数  | 变形补码 / 模四补码 | $$[x]_补 = \begin{cases} x, & 0 \le x < 1 \\ 4 - \lvert x\rvert,& -1 \le x < 0\end{cases}$$<br>该补码中有双符号位，$00$ 表示正，$11$ 表示负 |
+| 纯小数  | 原码          | $$[x]_原 = \begin{cases} x, & 0 \le x < 1 \\\\ 1 + \lvert x\rvert,& -1 < x \le 0\end{cases}$$                                |
+| 纯整数  | 原码 ($n$ 位)  | $$[x]_原 = \begin{cases} x, & 0 \le x < 2^{n - 1} \\\\ 2^{n - 1} + \lvert x \rvert,& -2^{n - 1} < x \le 0\end{cases}$$       |
+| 纯小数  | 补码          | $$[x]_补 = \begin{cases} x, & 0 \le x < 1 \\\\ 2 - \lvert x\rvert,& -1 \le x < 0\end{cases}$$                                |
+| 纯整数  | 补码 ($n$ 位)  | $$[x]_补 = \begin{cases} x, & 0 \le x < 2^{n - 1} \\\\ 2^n -  \lvert x \rvert,& -2^{n - 1} \le x < 0\end{cases}$$            |
+| 纯小数  | 变形补码 / 模四补码 | $$[x]_补 = \begin{cases} x, & 0 \le x < 1 \\\\ 4 - \lvert x\rvert,& -1 \le x < 0\end{cases}$$<br>该补码中有双符号位，$00$ 表示正，$11$ 表示负 |
 | 纯整数  | 移码 ($n$ 位)  | $$[x]_移 = 2^n + x,\quad -2^{n - 1} \le x < 2^n$$                                                                          |
 
 - 真值与补码之间的转换：
@@ -54,7 +60,7 @@ description: IEEE 754 单精度浮点数、大小端与对齐问、有符号数�
 	- 和表达式 $S_i = A_i \oplus B-i \oplus C_{i - 1}$
 	- 进位表达式：$C_i = A_iB_i + (A_i \oplus B_i) C_{i - 1}$，即进位的生成和延伸。
 - 串行进位加法器：$n$ 个全加器**串行相连**可以得到 $n$ 位加法器，其计算延迟由进位信号的传递时间确定。
-- 并行进位加法器：*这是数电内容...*![](Pasted-image-20260102155244.png)
+- 并行进位加法器：*这是数电内容...*![](attachments/Pasted-image-20260102155244.png)
 - 带标志加法器：对于有符号整数，需要一些标志信息：
 $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 
@@ -76,7 +82,7 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 		- 结果为负数：符号位为 $1$，$SF = 1$
 
 - 算术逻辑单元（ALU）：ALU 的核心是带标志加法器，其中 `ALUOp` 是操作控制端，其位数决定了操作的种类，$操作种类数 = 2^{ALUOp位数}$.
-  ![](Pasted-image-20260102160127.png)
+  ![](attachments/Pasted-image-20260102160127.png)
 
 ## 2.2.2 定点数的移位运算
 
@@ -116,14 +122,17 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 ## 2.2.6 数据的存储和排列
 
 最低有效**字节**（LSB）：编码的低位
+
 最高有效**字节**（MSB）：编码的高位
+
 **字节编址**：现代计算机都是如此，每个地址编号存放一个字节。
 $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 **大端方式**（big endian）：最高有效字节放在地址较小的地方
+
 **小端方式**（little endian）：最低有效字节放在地址较小的地方
 
 下图是对 `01 23 45 67H` 的存储示例：
-![](Pasted-image-20260102162636.png)
+![](attachments/Pasted-image-20260102162636.png)
 
 在阅读小端方式的机器代码时，字节是以相反顺序显示的。
 $$\bigstar \mathbf{IMPORTANT}\bigstar$$
@@ -133,7 +142,7 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 - **半字地址**（如 `short` 2 字节）：首地址放在 2 的倍数
 - **字节地址**（如 `double` 1 字节）：地址可随意
 - 这样可以提高取指和取数的速度，但会造成一定的空间浪费。
-![](Pasted-image-20260102163145.png)
+![](attachments/Pasted-image-20260102163145.png)
 
 # 2.3 浮点数的表示与运算
 
@@ -145,9 +154,9 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 - $S$：Sign，数符
 - $M$：Mantissa，尾数
 - $E$：Exponent，阶码，用移码表示
-![](Pasted-image-20260102174031.png)
+![](attachments/Pasted-image-20260102174031.png)
 
-**浮点数的表示范围**：![](Pasted-image-20260102174600.png)
+**浮点数的表示范围**：![](attachments/Pasted-image-20260102174600.png)
 数据上溢时，出现**异常**，进行溢出处理。
 数据下溢时，浮点数值趋于零，计算机将其当做机器零处理。
 

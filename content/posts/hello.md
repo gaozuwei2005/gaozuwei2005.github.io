@@ -5,6 +5,6 @@ draft: false
 toc: false
 description: the first post
 ---
-## Hi there. It's Zuwei's Blog.
+## Hi there. It's Zuwei's blog.
 
 如果你能看到这篇文章，说明基于 *Hugo + PaperMod* 搭建的个人博客已经成功运行。
