@@ -1,6 +1,6 @@
 ---
-title: "Writing"
-description: "随笔与长评（音乐 / 书 / 电影）。"
+title: Writing
+description: 随笔与长评
 ---
 
-这里是更偏表达的部分：长评与随笔。
+该栏目主要存放我的文艺长评与个人随笔。

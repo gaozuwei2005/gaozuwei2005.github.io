@@ -1,10 +1,10 @@
 ---
-title: "Hello Hugo"
+title: Hello Hugo
 date: 2026-01-18
 draft: false
-toc: true
+toc: false
+description: the first post
 ---
+## Hi there. It's Zuwei's Blog.
 
-## 这是我的第一篇 Hugo 文章
-
-如果你能看到这篇文章，说明 Hugo + PaperMod 已经成功运行。
+如果你能看到这篇文章，说明基于 *Hugo + PaperMod* 搭建的个人博客已经成功运行。
