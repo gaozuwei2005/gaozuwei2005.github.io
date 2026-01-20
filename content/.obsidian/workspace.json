@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "notes/computer-organization/lectures/week10_exceptions_parallelism_and_microprogramming/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -187,6 +187,7 @@
   },
   "active": "6cf7ffe5daa3dcf6",
   "lastOpenFiles": [
+    "_index.md",
     "timeline/_index.md",
     "notes/computer-organization/review/3-memory/index.md",
     "timeline",
@@ -231,7 +232,6 @@
     "notes/computer-organization/lectures/week09_pipelined_processor/attachments",
     "notes/computer-organization/lectures/week08_single_cycle_and_multi_cycle_control/attachments",
     "notes/computer-organization/_index.md",
-    "posts/hello.md",
-    "_index.md"
+    "posts/hello.md"
   ]
 }
